@@ -1,0 +1,165 @@
+.products {
+  text-align: center;
+}
+    
+.products__wrapper {
+  max-width: 1366px;
+  padding: 0 98px;
+  position: relative;
+}
+
+.products__title {
+  text-align: center;
+  padding-bottom: 64px;
+
+  h2 {
+    font-size: 34px;
+    line-height: 44.2px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-bottom: 22px;
+  }
+
+  a {
+    font-weight: 500;
+    line-height: 20.8px;
+    color: $font-color;
+    border-bottom: 1px solid $brown;
+    padding-bottom: 3px;
+    cursor: pointer;
+
+    &:hover {
+    color: $brown;
+    }
+  }
+}
+
+.products__items-title {
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    padding: 17px 0 4px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18.2px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.products__items {
+  overflow: hidden;
+
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition: margin-left 450ms;
+  }
+  
+  li {
+    padding-right: 30px;
+
+    // &:nth-child(4n) {
+    //   padding-right: 0;
+    // }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    height: 284px;
+    overflow: hidden;
+  }
+
+  img {
+    transition: all 0.5s ease-out;
+  }
+}
+
+.products__controles button {
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.8);
+  }
+}
+
+.products__controle-pages {
+  position: absolute;
+  bottom: -72px;
+  left: 50%;
+  transform: translate(-33%);
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding-right: 15px;
+    
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: none;
+    }
+
+    &:active {
+      color: $font-color;
+    }
+
+    &:hover {
+      color: $brown;
+    }
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.products__controle-pages-item {
+  color: $grey;
+}
+
+.products__controle-pages-item .products__controle-pages-item--active{
+  color: $font-color;
+}
+
+.products__controle-arrow-right {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  height: 17px;
+  width: 35px;
+  top: 38px;
+  right: 100px;
+  color: $brown;
+}
+
+.products__controle-arrow-left {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  height: 17px;
+  width: 35px;
+  top: 35px;
+  left: 79px;
+}
+  
