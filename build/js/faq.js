@@ -2,23 +2,23 @@
 (function () {
 
   var faq = document.querySelector('.faq');
-  var itemMaterials = document.querySelector('.item__materials');
+  var itemMaterials = document.querySelector('.faq__list-item__materials');
   var faqMaterialsToggle = document.querySelector('.faq__toggle--materials');
-  var itemCountries = document.querySelector('.item__countries');
+  var itemCountries = document.querySelector('.faq__list-item__countries');
   var faqCountriesToggle = document.querySelector('.faq__toggle--countries');
-  var itemReturn = document.querySelector('.item__return');
+  var itemReturn = document.querySelector('.faq__list-item__return');
   var faqReturnToggle = document.querySelector('.faq__toggle--return');
-  var itemPayment = document.querySelector('.item__payment');
+  var itemPayment = document.querySelector('.faq__list-item__payment');
   var faqPaymentToggle = document.querySelector('.faq__toggle--payment');
 
   if (faq) {
     faq.classList.remove('faq--nojs');
 
     var toggleClickHandler = function (item) {
-      if (item.classList.contains('item--hide')) {
-        item.classList.remove('item--hide');
+      if (item.classList.contains('faq__list-item--hide')) {
+        item.classList.remove('faq__list-item--hide');
       } else {
-        item.classList.add('item--hide');
+        item.classList.add('faq__list-item--hide');
       }
     };
 

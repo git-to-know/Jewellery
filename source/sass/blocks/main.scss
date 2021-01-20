@@ -9,7 +9,7 @@
   background-image: url(../img/index-main-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center 100%;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   margin: auto;
   display: flex;
@@ -61,7 +61,11 @@
 @media (max-width: $tablet-width) {
   .main {
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
+  }
+
+  .main__title {
+    padding-right: 18px;
   }
 
   .main__wrapper {
@@ -79,7 +83,7 @@
 @media (max-width: $mobile-width) {
   .main {
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
   }
 
   .main__wrapper {
@@ -93,12 +97,13 @@
   }
 
   .main__title {
-    padding-top: 200px;
+    padding-right: 0;
+    padding-top: 194px;
 
     h1 {
       font-size: 38px;
-      line-height: 59.3px;
-      padding-bottom: 16px;
+      line-height: 39.3px;
+      padding-bottom: 0;
     }
 
     p {

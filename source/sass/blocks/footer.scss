@@ -7,7 +7,7 @@
 .footer__wrapper {
   max-width: 1366px;
   display: flex;
-  padding: 87px 96px 85px 96px;
+  padding: 87px 96px 80px 96px;
   align-items: center;
   width: 100%;
   justify-content: space-between;
@@ -57,7 +57,7 @@
     color: $white;
     background-color: transparent;
     border: none;
-    padding: 12px 0;
+    padding: 10px 0;
     cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
@@ -142,16 +142,31 @@
 @media (max-width: $tablet-width) {
   .footer__wrapper {
     flex-wrap: wrap;
-    padding: 60px 150px 60px 45px;
+    padding: 50px 150px 54px 45px;
   }
 
   .footer__main {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 46px;
+    padding-right: 14px;
+    padding-left: 2px;
+
+    h2 {
+      letter-spacing: .025em;
+    }
+
+    p {
+      padding-left: 0;
+    }
   }
 
   .footer__nav {
     width: 65%;
+    padding-left: 3px;
+
+    ul {
+      padding-right: 5px;
+    }
   }
 
   .footer__email-form {  
@@ -160,23 +175,33 @@
       max-width: 100%;
     }
   }
+
+  .footer__social {
+    padding-top: 6px;
+
+    li {
+      padding-bottom: 24px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) { 
   .footer__wrapper {
-    padding: 60px 15px;
+    padding: 49px 15px;
     flex-direction: column;
     align-items: start;
   }
 
-  .footer__main {  
+  .footer__main {
+    padding-left: 0;
     h2 {
-      padding-bottom: 30px;
+      padding-bottom: 14px;
+      letter-spacing: .021em;
     }
 
     p {
       line-height: 22.4px;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
   }
 
@@ -188,15 +213,21 @@
 
   .footer__nav {
     flex-direction: column;
+    padding-left: 0;
 
     ul {
-      padding-bottom: 50px;
+      padding-bottom: 45px;
     }
   }
 
   .footer__social {
+    width: 56%;
+    padding-top: 8px;
+
     ul {
       display: flex;
+      justify-content: space-between;
+      margin-left: -4px;
     }
 
     li {
@@ -208,10 +239,10 @@
     }
 
     svg {
-      padding-right: 30px;
+      padding-right: 0;
       height: 21px;
+      width: 20px;
     }
-
   }
 
 }
