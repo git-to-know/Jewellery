@@ -10,6 +10,7 @@
   var faqReturnToggle = document.querySelector('.faq__toggle--return');
   var itemPayment = document.querySelector('.faq__list-item__payment');
   var faqPaymentToggle = document.querySelector('.faq__toggle--payment');
+  
 
   if (faq) {
     faq.classList.remove('faq--nojs');

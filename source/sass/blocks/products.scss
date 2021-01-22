@@ -48,53 +48,55 @@
   }
 }
 
-.products__wrapper .swiper-button-next {
-  position: absolute;
-  height: 17px;
-  width: 35px;
-  top: 38px;
-  right: 91px;
-  color: $brown;
-  cursor: pointer;
-}
-
-.products__wrapper .swiper-button-prev {
-  position: absolute;
-  height: 17px;
-  width: 35px;
-  top: 35px;
-  left: 80px;
-  cursor: pointer;
-  color: $brown;
-}
-.products__swiper .swiper-pagination {
-  padding-top: 48px;
-  padding-left: 15px;
-}
-
-.products__swiper .swiper-pagination-bullet {
-  padding-right: 13px;
-  color: $grey;
-}
-
-.products__swiper .swiper-pagination-bullet-active {
-  color: $font-color;
-}
-
-.products__swiper .swiper-slide {
-  width: 270px;
-  height: 358px;
-}
-
 .products__wrapper {
   max-width: 1366px;
   padding: 0 98px;
   position: relative;
   margin: 0 auto;
+
+  .swiper-button-next {
+    position: absolute;
+    height: 17px;
+    width: 35px;
+    top: 38px;
+    right: 91px;
+    color: $brown;
+    cursor: pointer;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    height: 17px;
+    width: 35px;
+    top: 35px;
+    left: 80px;
+    cursor: pointer;
+    color: $brown;
+  }
+
+  .swiper-container {
+    padding-top: 62px;
+  }
 }
 
-.products__wrapper .swiper-container {
-  padding-top: 200px;
+.products__swiper {
+  .swiper-pagination {
+    padding-top: 48px;
+    padding-left: 15px;
+  }
+  .swiper-pagination-bullet {
+    padding-right: 13px;
+    color: $grey;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $font-color;
+  }
+
+  .swiper-slide {
+    width: 270px;
+    height: 358px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -135,7 +137,7 @@
     height: 339px;
 
     img {
-      width: 100%;
+      width: auto;
       height: 100%;
     }
   }
@@ -150,15 +152,13 @@
 }
 
 @media (max-width: $mobile-width) {
-  .products__wrapper {
-    padding: 0 14px;
-  }
-
   .products__title {
     width: 150px;
   }
 
   .products__wrapper {
+    padding: 0 14px;
+
     .swiper-button-prev, 
     .swiper-button-next {
       display: none;
@@ -166,6 +166,7 @@
 
     .swiper-container {
       padding-top: 45px;
+      max-width: 500px;
     }
   }
 
@@ -176,7 +177,33 @@
     }
 
     .swiper-pagination {
-      padding-top: 117px;
+      padding-left: 0;
+      padding-top: 115px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 15px;
+        top: 297px;
+        left: calc(49% - 7px);
+        background-image: url(../img/icon-of6.svg);
+      }
+    }
+
+    .swiper-pagination-bullet {
+      display: none;
+    }
+
+    .swiper-pagination-bullet-active {
+      display: block;
+      width: 10px;
+      margin: 0 auto;
+      padding-right: 45px;
+    }
+
+    .swiper-wrapper {
+      width: 100%
     }
   }
 
@@ -184,5 +211,3 @@
     padding-top: 15px;
   }
 }
-
-  
