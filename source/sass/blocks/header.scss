@@ -16,7 +16,7 @@
   font-weight: 500;
 }
 
-.header__wraper--catalog {
+.header__wrapper--catalog {
   padding: 40px 98px 0;
 }
 
@@ -51,6 +51,10 @@
 
   a {
     color: $font-color;
+
+    &:hover {
+      color: $brown;
+    }
   }
 }
 
@@ -61,14 +65,13 @@
   padding-top: 13px;
   padding-right: 29px;
 
-  button {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-  }
-  
-  &:hover {
-    color: $brown;
+  a {
+    cursor: pointer;
+    color: $font-color;
+
+    &:hover {
+      color: $brown;
+    }
   }
 }
 
@@ -290,7 +293,7 @@
       padding: 20px 0 0 2px;
       width: 100%;
 
-      button {
+      a {
         font-size: 18px;
         line-height: 23.4px;
         color: $white;

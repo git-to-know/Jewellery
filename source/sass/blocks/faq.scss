@@ -7,11 +7,12 @@
 	max-width: 1366px;
 	padding: 0 198px;
 	width: 100%;
-}
 
-.faq__list {
-	border-collapse: collapse;
-	width: 100%;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
 	caption {
 		text-align: center;
@@ -48,14 +49,14 @@
 
 	button {
 		display: block;
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    border: 0;
+		position: absolute;
+		content: "";
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		border: 0;
 		background-color: transparent;
 
 		&:hover {
@@ -95,18 +96,6 @@
 	display: none;
 }
 
-// .item--hide .item__countries p{
-// 	display: none;
-// }
-
-// .item--hide .item__payment p{
-// 	display: none;
-// }
-
-// .item--hide .item__return p{
-// 	display: none;
-// }
-
 .faq--nojs {
 	.faq__list p{
 		display: block;
@@ -125,9 +114,7 @@
 @media (max-width: $tablet-width) {
 	.faq__wrapper {
 		padding: 0 45px;
-	}
-
-	.faq__list {
+	
 		p {
       padding-right: 0;
       padding-top: 26px;
@@ -160,16 +147,13 @@
         background-size: cover;
       }
     }
-
   }
 }
 
 @media (max-width: $mobile-width) {
 	.faq__wrapper {
 		padding: 0 15px;
-	}
-
-	.faq__list {	
+		
 		caption {
 			padding-bottom: 27px;
 		}
@@ -214,16 +198,7 @@
 		}
   }
   
-  // .faq__list-item__countries,
-  // .faq__list-item__payment,
-  // .faq__list-item__return  {
-  //   padding-top: 14px;
-  //   padding-top: 22px;
-  // }
-
-	.item__return {
-		h3 {
-			padding-right: 0;
-		}
-	}
+  .faq__list-item__return h3 {
+    padding-right: 0;
+  }
 }

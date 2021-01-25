@@ -1,7 +1,7 @@
 'use strict';
 (function () {
 
-  new Swiper('.swiper-container', {
+  new Swiper('.products__swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -37,8 +37,5 @@
       }
     },
   });
-  
-
-
 }) ();
 

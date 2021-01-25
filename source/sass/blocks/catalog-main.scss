@@ -65,12 +65,12 @@
 }
 
 @media (max-width: $mobile-width) {
-  .catalog-main-title {
+  .catalog-main__title {
     padding-top: 80px;
 
     p {
       width: 80%;
-    margin: auto;
+      margin: auto;
     }
   }
 

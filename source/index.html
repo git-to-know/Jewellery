@@ -27,7 +27,7 @@
       <div class="header__main-nav">
         <div class="header__main-nav-burger"></div>
         <ul>
-          <li><a href="catalog.html">What's new</a></li>
+          <li><a href="#">What's new</a></li>
           <li><a href="#">Chokers</a></li>
           <li><a href="#">Necklaces</a></li>
           <li><a href="#">Rings</a></li>
@@ -50,9 +50,9 @@
       <div class="header__search">
         <svg width="14" height="14" aria-label="Search">
           <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
-        </svg>
+        </svg>        
+        <input id="search" type="text" name="search" placeholder="Type here to search">
         <label for="search" class="visually-hidden">Type here to search</label>
-        <input id="search" type="text" name="search" placeholder="Type here to search"></input>
       </div>
       <div class="header__nav">
         <ul>
@@ -62,7 +62,7 @@
         </ul>
       </div>
       <div class="header__login">
-        <button type="button">Login</button>
+        <a href="index-nojs.html" class="login-button">Login</a>
       </div>
     </div>
   </header>
@@ -79,7 +79,7 @@
       <div class="products__wrapper">
         <div class="products__title">
           <h2>New In</h2>
-          <a>Shop Now</a>
+          <a href="catalog.html">Shop Now</a>
         </div>
         <div class="products__controle-arrow-right swiper-button-next">
           <svg width="31" height="9" aria-label="Slide right">
@@ -94,7 +94,7 @@
         <div class="products__swiper swiper-container">
           <div class="products__items swiper-wrapper">
             <div class="swiper-slide">
-              <a>
+              <a href="card.html">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -111,7 +111,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -128,7 +128,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/index-gold-chain.webp 1x, img/index-gold-chain2x.webp 2x">
@@ -144,7 +144,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -161,7 +161,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -178,7 +178,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -195,7 +195,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/index-gold-chain.webp 1x, img/index-gold-chain2x.webp 2x">
@@ -211,7 +211,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -228,7 +228,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -245,7 +245,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -262,7 +262,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp" srcset="img/index-gold-chain.webp 1x, img/index-gold-chain2x.webp 2x">
@@ -278,7 +278,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <a>
+              <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
@@ -380,7 +380,7 @@
               <h3>What materials are the&nbsp;jewellery made of?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
-              <button class="faq__toggle faq__toggle--materials" type="button"><span
+              <button type="button" class="faq__toggle faq__toggle--materials"><span
                   class="visually-hidden">Open</span></button>
             </td>
           </tr>
@@ -389,7 +389,7 @@
               <h3>Which countries do&nbsp;you&nbsp;deliver to?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
-              <button class="faq__toggle faq__toggle--countries" type="button"><span
+              <button type="button" class="faq__toggle faq__toggle--countries"><span
                   class="visually-hidden">Open</span></button>
             </td>
           </tr>
@@ -398,7 +398,7 @@
               <h3>What are the payment&nbsp;methods?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
-              <button class="faq__toggle faq__toggle--payment" type="button"><span
+              <button type="button" class="faq__toggle faq__toggle--payment"><span
                   class="visually-hidden">Open</span></button>
             </td>
           </tr>
@@ -407,7 +407,7 @@
               <h3>Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t&nbsp;fit&nbsp;me?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
-              <button class="faq__toggle faq__toggle--return" type="button"><span
+              <button type="button" class="faq__toggle faq__toggle--return"><span
                   class="visually-hidden">Open</span></button>
             </td>
           </tr>
@@ -526,10 +526,10 @@
       <div class="footer__main">
         <h2>The good stuff in&nbsp;your inbox </h2>
         <p>News and updates from CH. No&nbsp;spam, we promise.</p>
-        <div class="footer__email-form">
+        <div class="footer__email-form">          
+          <input id="email" type="text" name="email" placeholder="Your E-mail">
           <label for="email" class="visually-hidden">Input email</label>
-          <input id="email" type="text" name="email" placeholder="Your E-mail"></input>
-          <button class="footer__signup-button" type="submit">
+          <button type="submit" class="footer__signup-button">
             Sign Up
             <svg width="29" height="9" aria-label="Arrow">
               <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
@@ -555,7 +555,7 @@
         <ul>
           <li>
             <a href="#">
-              <svg width="8" height="15" aria-label="facebook">
+              <svg width="8" height="15" aria-label="Facebook">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
               </svg>
               <p>Facebook</p>
@@ -563,7 +563,7 @@
           </li>
           <li>
             <a href="#">
-              <svg width="15" height="15" aria-label="instagram">
+              <svg width="15" height="15" aria-label="Instagram">
                 <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
               </svg>
               <p>Instagram</p>
@@ -571,7 +571,7 @@
           </li>
           <li>
             <a href="#">
-              <svg width="15" height="15" aria-label="pinterest">
+              <svg width="15" height="15" aria-label="Pinterest">
                 <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
               </svg>
               <p>Pinterest</p>
@@ -579,7 +579,7 @@
           </li>
           <li>
             <a href="#">
-              <svg width="15" height="13" aria-label="twitter">
+              <svg width="15" height="13" aria-label="Twitter">
                 <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
               </svg>
               <p>Twitter</p>
@@ -589,10 +589,46 @@
       </div>
     </div>
   </footer>
-  <script src="js/faq.js"></script>
-  <script src="js/swiper-bundle.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/open-menu.js"></script>
+
+  <div class="login-popup">
+    <div class="login-popup__overlay"></div>
+    <div class="login-popup__box">
+      <button type="button" class="login-popup__close">
+        <svg width="14" height="14" aria-label="Close">
+          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="login-popup__main-pic">
+        <picture>
+          <!-- 1х: 430px; 2x: 860px -->
+          <source type="image/webp" srcset="img/login-pic.webp 1x, img/login-pic2x.webp 2x">
+
+          <!-- 1х: 430px; 2x: 860px -->
+          <img src="img/login-pic.jpg" srcset="img/login-pic2x.jpg 2x" width="430" height="138" alt="jewellerry">
+        </picture>
+      </div>
+      <h2>Log In</h2>
+      <form class="login-popup__form" method="post">
+
+        <input id="popup-email" type="email" name="email" placeholder="Your E-mail" required>
+        <label for="popup-email" class="visually-hidden">Email field</label>
+
+        <input id="password" type="password" name="password" placeholder="Password" required>
+        <label for="password" class="visually-hidden">Password field</label>
+        <a href="#">Forgot your password?</a>
+
+        <button type="submit">Log In</button>
+      </form>
+      <div class="login-popup__sign-up">
+        <p>Don’t have an account?</p>
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

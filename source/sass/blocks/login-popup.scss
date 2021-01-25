@@ -1,0 +1,138 @@
+.login-popup__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(29, 22, 19, 0.25);
+  z-index: 20;
+}
+  
+.login-popup__box {
+  width: 430px;
+  height: 586px;
+  background-color: $light-brown;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 50;
+
+  h2 {
+    font-size: 34px;
+    line-height: 44.2px;
+    margin: 0;
+    text-align: center;
+    padding-top: 52px;
+  }
+
+  form {
+    padding: 0 45px;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $font-color;
+    background-color: transparent;
+    padding: 33px 21px 11px 0;
+    box-sizing: border-box;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 21.5px;
+      font-weight: 500;
+      color: $grey;
+    }
+  }
+
+  a{
+    width: 100%;
+    text-align: end;
+    display: block;
+    font-size: 12px;
+    line-height: 29px;
+    font-weight: 500;
+    color: $grey;
+
+    &:hover {
+      color: $brown
+    }
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }  
+}
+
+.login-popup__form {
+  button {
+    width: 100%;
+    background-color: $brown;
+    padding: 26px;
+    margin-top: 38px;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      outline: 1px solid $brown;
+      outline-offset: -1px;
+      color: $font-color
+    }
+  }
+}
+
+.login-popup__main-pic {
+  height: 138px;
+  position: relative;
+}
+
+.login-popup__sign-up {  
+  padding: 14px 98px;
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+    margin: 0;
+    display: inline;
+    padding-right: 7px;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 21px;
+    color: $font-color;
+    display: inline;    
+  }
+}
+
+.login-popup__close {
+  width: auto;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 0;
+  color: black;
+  position: absolute;
+  z-index: 100;
+  right: 19px;
+  top: 19px;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.login-popup {
+  display: none;
+}
+
+.login-popup--show, .login-popup--nojs {
+  display: block;
+}
+
+
+

@@ -1,0 +1,274 @@
+.card {
+  max-width: 1366px;
+  padding: 98px 98px 118px;
+  display: flex;
+  margin: auto;
+}
+
+.card__container {
+  width: 51%;
+  padding-right: 8.8%;
+}
+
+.card__picture {
+  
+  display: grid;
+  grid-template-columns: repeat(5,17%);
+  grid-gap: 6.5% 5%;
+  grid-template-rows: 29% 28% 29%;
+  height: fit-content;
+
+  div {
+    height: fit-content;
+  }
+}
+
+.card__picture-preview {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &--1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  &--2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  &--3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+}
+
+.card__picture-large {
+  img {
+    width: 95%;
+    height: auto;
+  }
+
+  grid-column: 2/-1;
+  grid-row: 1/4;
+}
+
+.card__description {
+  width: 40%;
+
+  table {
+    width: 80%;
+    padding-bottom: 37px;
+  }
+
+  td {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 18.2px;
+
+    &:last-child {
+      text-align: end;
+    }
+  }
+
+  a {
+    width: 79%;
+    padding: 26px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: $brown;
+    color: $white;
+    vertical-align: middle;
+
+    &:hover {
+      background-color: transparent;
+      outline: 1px solid $brown;
+      outline-offset: -1px;
+      color: $font-color;
+    }
+  }
+}
+
+.card__description-title {
+  padding-bottom: 40px;
+
+  h2 {
+    font-size: 34px;
+    line-height: 26.2px;
+    margin: 0;
+    padding-bottom: 19px;
+  }
+
+  p {
+    font-size: 26px;
+    line-height: 33.8px;
+    margin: 0;
+  }
+}
+
+.card__description-table-name {
+  display: flex;
+  padding-bottom: 30px;
+
+  p {
+    margin: 0;
+
+    &:first-child {
+      color: $grey;
+      padding-right: 8%;
+    }
+  }
+}
+
+.card__description-note {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  width: 79%;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: $grey;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .card {
+    padding: 31px 44px 71px 46px;
+  }
+
+  .card__container {
+    width: 47%;
+    padding-right: 5.5%;
+  }
+
+  .card__picture {    
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 4.5% 5%;
+    grid-template-rows: 31% 31% 31%;
+  }
+
+  .card__picture-preview {  
+    &--1 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+  
+    &--2 {
+      grid-column-start: 2;
+      grid-row-start: 3;
+    }
+  
+    &--3 {
+      grid-column-start: 3;
+      grid-row-start: 3;
+    }
+  }
+  
+  .card__picture-large {  
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card__description {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      width: 100%;
+    }
+
+    table {
+      width: 102%;
+    }
+
+  }
+
+  .card__description-title h2 {
+    padding-bottom: 19px;
+  }
+
+  .card__description-table-name p:first-child {
+    padding-right: 13%;
+  }
+
+  .card__description-note {
+    width: 100%;
+  
+    p {
+      font-size: 12px;
+      line-height: 15.6px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .card {
+    padding: 0 15px 58px;
+    flex-direction: column;
+  }
+
+  .card__container {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .card__picture {
+    display: flex;
+    padding-bottom: 45px;
+    grid-gap: 0;
+
+    img {
+      width: 290px;
+      height: 260px;
+    }
+  }
+
+  .card__picture-large {
+    order: -1;
+  }
+
+  // .card__picture-preview {
+  //   display: none;
+  // }
+
+  .card__description {
+    width: 100%;
+
+    table {
+      padding-bottom: 26px;
+    }
+  }
+
+  .card__description-title {
+    padding-bottom: 32px;
+  }
+
+  .card__description-note {
+    padding-top: 11px;
+
+    p {
+      width: 24%;
+    text-align: center;
+    }
+  }
+
+  .card__container .swiper-pagination {
+    position: absolute;
+    bottom: 54px;
+    z-index: 5;
+    right: 43%;
+  }
+}
