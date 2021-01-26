@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="#">
 
-  <link rel="preload" href="fonts/cormorantgaramond.woff" as="font">
-  <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font">
-  <link rel="preload" href="fonts/cormorantgaramondbold.woff" as="font">
-  <link rel="preload" href="fonts/cormorantgaramondbold.woff2" as="font">
-  <link rel="preload" href="fonts/cormorantgaramonditalic.woff" as="font">
-  <link rel="preload" href="fonts/cormorantgaramonditalic.woff2" as="font">
-  <link rel="preload" href="fonts/poppinsregular.woff" as="font">
-  <link rel="preload" href="fonts/poppinsregular.woff2" as="font">
-  <link rel="preload" href="fonts/poppinsbold.woff" as="font">
-  <link rel="preload" href="fonts/poppinsbold.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/cormorantgaramond.woff" as="font"> -->
+  <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/cormorantgaramondbold.woff" as="font"> -->
+  <link rel="preload" href="fonts/cormorantgaramondbold.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/cormorantgaramonditalic.woff" as="font"> -->
+  <link rel="preload" href="fonts/cormorantgaramonditalic.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/poppinsregular.woff" as="font"> -->
+  <link rel="preload" href="fonts/poppinsregular.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/poppinsbold.woff" as="font"> -->
+  <link rel="preload" href="fonts/poppinsbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -86,7 +86,7 @@
             </svg>
           </button>
           <div class="items__fieldset-wrapper">
-            <fieldset class="items__option items__option-product items__option--hide">
+            <fieldset class="items__option items__option-product">
               <legend>Product
                 <button type="button" class="items__filter-toggle items__filter-toggle--product"><span class="visually-hidden">Open</span></button>
               </legend>
@@ -110,7 +110,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="items__option items__option-material items__option--hide">
+            <fieldset class="items__option items__option-material">
               <legend>Material
                 <button type="button" class="items__filter-toggle items__filter-toggle--material"><span class="visually-hidden">Open</span></button>
               </legend>
@@ -125,7 +125,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="items__option items__option-collection items__option--hide">
+            <fieldset class="items__option items__option-collection">
               <legend>Collection
                 <button type="button" class="items__filter-toggle items__filter-toggle--collection"><span class="visually-hidden">Open</span></button>
               </legend>
@@ -141,7 +141,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="items__option items__option-price items__option--hide">
+            <fieldset class="items__option items__option-price">
               <legend>Price
                 <button type="button" class="items__filter-toggle items__filter-toggle--price"><span class="visually-hidden">Open</span></button>
               </legend>
@@ -1214,7 +1214,7 @@
         <div class="footer__email-form">          
           <input id="email" type="text" name="email" placeholder="Your E-mail">
           <label for="email" class="visually-hidden">Input email</label>
-          <button type="submit" class="footer__signup-button" >
+          <button type="submit">
             Sign Up
             <svg width="29" height="9" aria-label="Arrow">
               <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>

@@ -16,17 +16,11 @@
     },
 
     spaceBetween: 30,
-
     autoheight: false,
-
     slidesPerColumnFill: 'row',
-
     slidesPerView: 2,
-
     slidesPerGroup: 2,
-
     slidesPerColumn: 6,
-
 
     breakpoints: {
       1294: {

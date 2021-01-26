@@ -73,19 +73,19 @@
     };
 
     faqMaterialsToggle.addEventListener('click', function () {
-      toggleClickHandler (itemMaterials);
+      toggleClickHandler(itemMaterials);
     });
 
     faqCountriesToggle.addEventListener('click', function () {
-      toggleClickHandler (itemCountries);
+      toggleClickHandler(itemCountries);
     });
 
     faqReturnToggle.addEventListener('click', function () {
-      toggleClickHandler (itemReturn);
+      toggleClickHandler(itemReturn);
     });
 
     faqPaymentToggle.addEventListener('click', function () {
-      toggleClickHandler (itemPayment);
+      toggleClickHandler(itemPayment);
     });
   }
 })();
@@ -157,7 +157,6 @@
       }
     };
 
-
     productToggle.addEventListener('click', function () {
      toggleClickHandler(productRange);
     });
@@ -173,7 +172,6 @@
     priceToggle.addEventListener('click', function () {
     toggleClickHandler(priceRange);
     });
-
   }
 
 })();
@@ -219,10 +217,9 @@
       link.addEventListener('click', openPopupClickHandler);
     }
     close.addEventListener('click', closePopupClickHandler);
-
+    
     overlay.addEventListener('click', closePopupClickHandler);
     overlay.removeEventListener('click', closePopupClickHandler);
-
 
     var escClickHandler = function (evt) {
       if (evt.key === 'Escape') {
@@ -9739,26 +9736,10 @@
 'use strict';
 (function () {
 
-  // const options = {
-  //   '.card__container', {
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //       clicable: true,
-  //       type: 'fraction',
-  //       renderFraction: function (currentClass, totalClass) {
-  //         return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-  //       },
-  //     },
-
-  //     spaceBetween: 30,
-  //   }
-  // };
-  // console.log(options);
-
   let swiper = undefined;
   const mobile = window.matchMedia('(max-width: 767px)').matches;
 
-  if ('mobile') {
+  if (mobile) {
     swiper = new Swiper('.card__container', {
       pagination: {
         el: '.swiper-pagination',
@@ -9768,13 +9749,12 @@
           return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
         },
       },
-
       spaceBetween: 30,
     });
   };
 
-  document.addEventListener('resize', () => {
-    if ('mobile') {
+  window.addEventListener('resize', () => {
+    if (mobile) {
       if (!swiper) {
         swiper = new Swiper('.card__container', {
           pagination: {
@@ -9784,8 +9764,7 @@
             renderFraction: function (currentClass, totalClass) {
               return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
             },
-          },
-    
+          },    
           spaceBetween: 30,
         });
       }
@@ -9795,22 +9774,8 @@
         swiper = undefined;
       }
     }
+    document.location.reload (1);
   });
-
-  // new Swiper('.card__container', {
-
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clicable: true,
-  //     type: 'fraction',
-  //     renderFraction: function (currentClass, totalClass) {
-  //       return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-  //     },
-  //   },
-
-  //   spaceBetween: 30,
-  // });
-
 })();
 
 'use strict';
@@ -9831,17 +9796,11 @@
     },
 
     spaceBetween: 30,
-
     autoheight: false,
-
     slidesPerColumnFill: 'row',
-
     slidesPerView: 2,
-
     slidesPerGroup: 2,
-
     slidesPerColumn: 6,
-
 
     breakpoints: {
       1294: {
@@ -9888,27 +9847,24 @@
       },
     },
   
-    spaceBetween: 30,
-  
+    spaceBetween: 30,  
     slidesPerView: 2,
-    
-    breakpoints: {
-      
+
+    breakpoints: {      
       320: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-      },
-  
+      },  
       1024: {
         slidesPerView: 3,
         slidesPerGroup: 3
-      },
-  
+      },  
       1270: {
         slidesPerView: 4,
         slidesPerGroup: 4
       }
     },
   });
+  
 }) ();
 

@@ -88,7 +88,7 @@
     color: $white;
     font-weight: 500;
     line-height: 20.8px;
-    
+
     &:hover {
       color: $brown;
     }
@@ -131,10 +131,10 @@
   }
 
   li {
-    padding-bottom: 26px;
+    margin-bottom: 26px;
 
     &:last-child {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -152,7 +152,7 @@
     padding-left: 2px;
 
     h2 {
-      letter-spacing: .025em;
+      letter-spacing: 0.025em;
     }
 
     p {
@@ -169,34 +169,37 @@
     }
   }
 
-  .footer__email-form {  
+  .footer__email-form {
     input {
       width: 75%;
       max-width: 100%;
+      padding: 9px 0;
+      margin-left: -3px;
     }
   }
 
   .footer__social {
-    padding-top: 6px;
+    margin-top: 0;
 
     li {
-      padding-bottom: 24px;
+      margin-bottom: 24px;
     }
   }
 }
 
-@media (max-width: $mobile-width) { 
+@media (max-width: $mobile-width) {
   .footer__wrapper {
-    padding: 49px 15px;
+    padding: 49px 15px 36px;
     flex-direction: column;
     align-items: start;
   }
 
   .footer__main {
     padding-left: 0;
+
     h2 {
       padding-bottom: 14px;
-      letter-spacing: .021em;
+      letter-spacing: 0.021em;
     }
 
     p {
@@ -205,7 +208,7 @@
     }
   }
 
-  .footer__email-form {  
+  .footer__email-form {
     input {
       width: 61%;
     }
@@ -222,7 +225,7 @@
 
   .footer__social {
     width: 56%;
-    padding-top: 8px;
+    padding-top: 2px;
 
     ul {
       display: flex;
@@ -233,7 +236,7 @@
     li {
       padding-bottom: 0;
     }
-  
+
     p {
       display: none;
     }
@@ -244,5 +247,4 @@
       width: 20px;
     }
   }
-
 }

@@ -1,26 +1,10 @@
 'use strict';
 (function () {
 
-  // const options = {
-  //   '.card__container', {
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //       clicable: true,
-  //       type: 'fraction',
-  //       renderFraction: function (currentClass, totalClass) {
-  //         return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-  //       },
-  //     },
-
-  //     spaceBetween: 30,
-  //   }
-  // };
-  // console.log(options);
-
   let swiper = undefined;
   const mobile = window.matchMedia('(max-width: 767px)').matches;
 
-  if ('mobile') {
+  if (mobile) {
     swiper = new Swiper('.card__container', {
       pagination: {
         el: '.swiper-pagination',
@@ -30,13 +14,12 @@
           return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
         },
       },
-
       spaceBetween: 30,
     });
   };
 
-  document.addEventListener('resize', () => {
-    if ('mobile') {
+  window.addEventListener('resize', () => {
+    if (mobile) {
       if (!swiper) {
         swiper = new Swiper('.card__container', {
           pagination: {
@@ -46,8 +29,7 @@
             renderFraction: function (currentClass, totalClass) {
               return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
             },
-          },
-    
+          },    
           spaceBetween: 30,
         });
       }
@@ -57,20 +39,6 @@
         swiper = undefined;
       }
     }
+    document.location.reload (1);
   });
-
-  // new Swiper('.card__container', {
-
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clicable: true,
-  //     type: 'fraction',
-  //     renderFraction: function (currentClass, totalClass) {
-  //       return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-  //     },
-  //   },
-
-  //   spaceBetween: 30,
-  // });
-
 })();

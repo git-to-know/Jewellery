@@ -40,10 +40,9 @@
       link.addEventListener('click', openPopupClickHandler);
     }
     close.addEventListener('click', closePopupClickHandler);
-
+    
     overlay.addEventListener('click', closePopupClickHandler);
     overlay.removeEventListener('click', closePopupClickHandler);
-
 
     var escClickHandler = function (evt) {
       if (evt.key === 'Escape') {

@@ -52,7 +52,8 @@
 .card-popup__description-title {
   width: 70%;
 
-  h2, p {
+  h2,
+  p {
     font-size: 18px;
     line-height: 23.4px;
     margin: 0;
@@ -64,6 +65,10 @@
 .card-popup__button-close {
   top: 22px;
   right: 20px;
+
+  &:hover {
+    color: $brown;
+  }
 }
 
 .card-popup__description-amount {
@@ -105,7 +110,7 @@
       background-color: transparent;
       outline: 1px solid $brown;
       outline-offset: -1px;
-      color: $font-color
+      color: $font-color;
     }
   }
 }
@@ -145,7 +150,8 @@
   .card-popup__description-title {
     width: 57%;
 
-    h2, p {
+    h2,
+    p {
       font-size: 16px;
       line-height: 20.8px;
       padding-bottom: 7px;
@@ -159,13 +165,14 @@
   }
 
   .card-popup__description {
-    padding-bottom: 48px; 
-      img {
-        width: 70px;
-        height: 63px;
-      }
+    padding-bottom: 48px;
+
+    img {
+      width: 70px;
+      height: 63px;
+    }
   }
-  
+
   .card-popup__button-plus {
     top: 4px;
     right: 1px;

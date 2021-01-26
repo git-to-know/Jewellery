@@ -24,19 +24,19 @@
     };
 
     faqMaterialsToggle.addEventListener('click', function () {
-      toggleClickHandler (itemMaterials);
+      toggleClickHandler(itemMaterials);
     });
 
     faqCountriesToggle.addEventListener('click', function () {
-      toggleClickHandler (itemCountries);
+      toggleClickHandler(itemCountries);
     });
 
     faqReturnToggle.addEventListener('click', function () {
-      toggleClickHandler (itemReturn);
+      toggleClickHandler(itemReturn);
     });
 
     faqPaymentToggle.addEventListener('click', function () {
-      toggleClickHandler (itemPayment);
+      toggleClickHandler(itemPayment);
     });
   }
 })();

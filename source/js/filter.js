@@ -24,7 +24,6 @@
       }
     };
 
-
     productToggle.addEventListener('click', function () {
      toggleClickHandler(productRange);
     });
@@ -40,7 +39,6 @@
     priceToggle.addEventListener('click', function () {
     toggleClickHandler(priceRange);
     });
-
   }
 
 })();

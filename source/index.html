@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="#">
 
-  <link rel="preload" href="fonts/cormorantgaramond.woff" as="font">
-  <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font">
-  <link rel="preload" href="fonts/cormorantgaramondbold.woff" as="font">
-  <link rel="preload" href="fonts/cormorantgaramondbold.woff2" as="font">
-  <link rel="preload" href="fonts/cormorantgaramonditalic.woff" as="font">
-  <link rel="preload" href="fonts/cormorantgaramonditalic.woff2" as="font">
-  <link rel="preload" href="fonts/poppinsregular.woff" as="font">
-  <link rel="preload" href="fonts/poppinsregular.woff2" as="font">
-  <link rel="preload" href="fonts/poppinsbold.woff" as="font">
-  <link rel="preload" href="fonts/poppinsbold.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/cormorantgaramond.woff" as="font"> -->
+  <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/cormorantgaramondbold.woff" as="font"> -->
+  <link rel="preload" href="fonts/cormorantgaramondbold.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/cormorantgaramonditalic.woff" as="font"> -->
+  <link rel="preload" href="fonts/cormorantgaramonditalic.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/poppinsregular.woff" as="font"> -->
+  <link rel="preload" href="fonts/poppinsregular.woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/poppinsbold.woff" as="font"> -->
+  <link rel="preload" href="fonts/poppinsbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -373,7 +373,7 @@
     </section>
     <section class="faq faq--nojs">
       <div class="faq__wrapper">
-        <table class="faq__list">
+        <table>
           <caption>Frequently asked questions</caption>
           <tr>
             <td class="faq__list-item faq__list-item__materials faq__list-item--hide">
@@ -529,7 +529,7 @@
         <div class="footer__email-form">          
           <input id="email" type="text" name="email" placeholder="Your E-mail">
           <label for="email" class="visually-hidden">Input email</label>
-          <button type="submit" class="footer__signup-button">
+          <button type="submit">
             Sign Up
             <svg width="29" height="9" aria-label="Arrow">
               <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>

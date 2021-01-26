@@ -8,7 +8,7 @@
   background-color: rgba(29, 22, 19, 0.25);
   z-index: 20;
 }
-  
+
 .login-popup__box {
   width: 430px;
   height: 586px;
@@ -48,7 +48,7 @@
     }
   }
 
-  a{
+  a {
     width: 100%;
     text-align: end;
     display: block;
@@ -58,14 +58,14 @@
     color: $grey;
 
     &:hover {
-      color: $brown
+      color: $brown;
     }
   }
 
   button {
     border: none;
     cursor: pointer;
-  }  
+  }
 }
 
 .login-popup__form {
@@ -80,7 +80,7 @@
       background-color: transparent;
       outline: 1px solid $brown;
       outline-offset: -1px;
-      color: $font-color
+      color: $font-color;
     }
   }
 }
@@ -90,7 +90,7 @@
   position: relative;
 }
 
-.login-popup__sign-up {  
+.login-popup__sign-up {
   padding: 14px 98px;
 
   p {
@@ -106,7 +106,7 @@
     font-size: 14px;
     line-height: 21px;
     color: $font-color;
-    display: inline;    
+    display: inline;
   }
 }
 
@@ -130,9 +130,7 @@
   display: none;
 }
 
-.login-popup--show, .login-popup--nojs {
+.login-popup--show,
+.login-popup--nojs {
   display: block;
 }
-
-
-

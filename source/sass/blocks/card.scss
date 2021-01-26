@@ -11,9 +11,8 @@
 }
 
 .card__picture {
-  
   display: grid;
-  grid-template-columns: repeat(5,17%);
+  grid-template-columns: repeat(5, 17%);
   grid-gap: 6.5% 5%;
   grid-template-rows: 29% 28% 29%;
   height: fit-content;
@@ -139,41 +138,43 @@
 
 @media (max-width: $tablet-width) {
   .card {
-    padding: 31px 44px 71px 46px;
+    padding: 31px 44px 74px 46px;
   }
 
   .card__container {
     width: 47%;
     padding-right: 5.5%;
+    margin: 0;
   }
 
-  .card__picture {    
+  .card__picture {
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-gap: 4.5% 5%;
+    grid-gap: 4% 4.7%;
     grid-template-rows: 31% 31% 31%;
+    height: 100%;
   }
 
-  .card__picture-preview {  
+  .card__picture-preview {
     &--1 {
       grid-column-start: 1;
       grid-row-start: 3;
     }
-  
+
     &--2 {
       grid-column-start: 2;
       grid-row-start: 3;
     }
-  
+
     &--3 {
       grid-column-start: 3;
       grid-row-start: 3;
     }
   }
-  
-  .card__picture-large {  
+
+  .card__picture-large {
     grid-column: 1/4;
-    grid-row: 1/2;
+    grid-row: 1/3;
 
     img {
       width: 100%;
@@ -188,25 +189,34 @@
 
     a {
       width: 100%;
+      padding: 25px 20px;
     }
 
     table {
       width: 102%;
+      padding-bottom: 39px;
     }
 
+    td {
+      padding-bottom: 19px;
+    }
   }
 
-  .card__description-title h2 {
-    padding-bottom: 19px;
+  .card__description-title {
+    padding-left: 2px;
+
+    h2 {
+      padding-bottom: 19px;
+    }
   }
 
   .card__description-table-name p:first-child {
-    padding-right: 13%;
+    padding-right: 12%;
   }
 
   .card__description-note {
     width: 100%;
-  
+
     p {
       font-size: 12px;
       line-height: 15.6px;
@@ -216,7 +226,7 @@
 
 @media (max-width: $mobile-width) {
   .card {
-    padding: 0 15px 58px;
+    padding: 0 15px 60px;
     flex-direction: column;
   }
 
@@ -234,26 +244,29 @@
       width: 290px;
       height: 260px;
     }
+
+    div {
+      text-align: center;
+    }
   }
 
   .card__picture-large {
     order: -1;
   }
 
-  // .card__picture-preview {
-  //   display: none;
-  // }
-
   .card__description {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 
     table {
-      padding-bottom: 26px;
+      padding-bottom: 29px;
     }
   }
 
   .card__description-title {
     padding-bottom: 32px;
+    padding-left: 0;
   }
 
   .card__description-note {
@@ -261,7 +274,7 @@
 
     p {
       width: 24%;
-    text-align: center;
+      text-align: center;
     }
   }
 
@@ -270,5 +283,9 @@
     bottom: 54px;
     z-index: 5;
     right: 43%;
+  }
+
+  .card__description-table-name p:first-child {
+    padding-right: 14%;
   }
 }

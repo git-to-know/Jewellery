@@ -1,11 +1,11 @@
 .header {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-    
+
 .header__wrapper {
-	max-width: 1366px;
-	padding: 30px 98px 0;
+  max-width: 1366px;
+  padding: 30px 98px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -109,7 +109,6 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    padding-right: 37px;
     color: $font-color;
 
     &:hover {
@@ -117,8 +116,12 @@
     }
   }
 
-  li:last-child a{
-    padding-right: 0;
+  li {
+    padding-right: 37px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
@@ -146,13 +149,26 @@
   }
 
   .header__main-nav-burger {
-    position: absolute;
-    top: 54px;
-    left: 45px;
     width: 25px;
-    height: 2px;
-    background-color: $font-color;
-    box-shadow: 0 8px 0 0 $font-color, 0 16px 0 0 $font-color;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 25px;
+      height: 2px;
+      background-color: $font-color;
+      box-shadow: 0 8px 0 0 $font-color, 0 16px 0 0 $font-color;
+    }
+
+    &:hover::before {
+      background-color: $brown;
+      box-shadow: 0 8px 0 0 $brown, 0 16px 0 0 $brown;
+    }
   }
 
   .header__cart {
@@ -169,7 +185,6 @@
 
     svg {
       display: block;
-      width: 20px;
       height: 19px;
       fill: transparent;
       width: 100%;
@@ -186,20 +201,20 @@
       z-index: 50;
       width: 100%;
       box-sizing: border-box;
-      
       background-color: $brown;
       padding-bottom: 74px;
     }
 
-    .header__main-nav{
+    .header__main-nav {
       order: 5;
       width: 100%;
       justify-content: start;
+      flex-direction: column;
 
       ul {
         display: flex;
         flex-direction: column;
-        padding: 46px 0 0 2px;
+        padding: 27px 0 0 2px;
       }
 
       li {
@@ -215,8 +230,12 @@
     }
 
     .header__main-nav-burger {
-      background-color: $white;
-      box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+      top: -121px;
+
+      &::before {
+        background-color: $white;
+        box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+      }
     }
 
     .header__logo a {
@@ -239,13 +258,13 @@
       }
 
       input {
-        padding-left: 0;
         width: 100%;
         box-sizing: border-box;
         height: 39px;
         padding-left: 42px;
         border-radius: 50px;
-        opacity: 0.15;        
+        opacity: 0.15;
+        cursor: pointer;
 
         &::placeholder {
           color: transparent;
@@ -261,8 +280,8 @@
       display: block;
       order: 5;
       width: 100%;
-      padding-top: 21px;
-    padding-left: 3px;
+      padding-top: 18px;
+      padding-left: 3px;
 
       ul {
         display: flex;
@@ -277,7 +296,7 @@
 
       a {
         font-size: 18px;
-        line-height: 23,4px;
+        line-height: 23.4px;
         color: $white;
       }
     }
@@ -290,7 +309,7 @@
       order: 6;
       display: block;
       margin: 0;
-      padding: 20px 0 0 2px;
+      padding: 23px 0 0 2px;
       width: 100%;
 
       a {
@@ -301,7 +320,7 @@
     }
   }
 
-  .header--nojs .header__wrapper{
+  .header--nojs .header__wrapper {
     height: auto;
     position: static;
   }
@@ -327,8 +346,8 @@
   }
 
   .header__main-nav-burger {
-    top: 37px;
-    left: 15px;
+    top: 0;
+    left: 0;
   }
 
   .header--menu-show {
@@ -336,9 +355,13 @@
       padding-bottom: 44px;
     }
 
+    .header__main-nav-burger {
+      top: -107px;
+    }
+
     .header__main-nav {
       ul {
-        padding-top: 35px;
+        padding-top: 16px;
       }
     }
 
@@ -354,14 +377,12 @@
     }
 
     .header__nav {
-      padding-top: 11px;
-    padding-left: 1px;
+      padding-top: 8px;
+      padding-left: 1px;
     }
 
     .header__login {
       padding-top: 14px;
     }
   }
-  
 }
-
