@@ -97,6 +97,7 @@
   justify-content: center;
 
   ul {
+    list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
@@ -284,6 +285,7 @@
       padding-left: 3px;
 
       ul {
+        list-style: none;
         display: flex;
         flex-direction: column;
         margin: 0;

@@ -28,7 +28,7 @@
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .caralog-main__wrapper {
+  .catalog-main__wrapper {
     background-image: url("../img/catalog-main-desktop2x.jpg");
   }
 }
@@ -40,6 +40,7 @@
   position: absolute;
 
   h1 {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 44.2px;

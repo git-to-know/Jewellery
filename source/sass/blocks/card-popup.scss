@@ -31,6 +31,7 @@
   }
 
   h2 {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: 26px;
     line-height: 23.8px;
     margin: 0;
@@ -59,6 +60,10 @@
     margin: 0;
     padding-bottom: 7px;
     text-align: start;
+  }
+
+  h2 {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
   }
 }
 
@@ -121,13 +126,6 @@
 
 .card-popup--show {
   display: block;
-}
-
-.no-scroll {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
 }
 
 @media (max-width: $mobile-width) {

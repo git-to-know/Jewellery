@@ -19,6 +19,7 @@
   padding-bottom: 18px;
 
   h2 {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: 34px;
     line-height: 44.2px;
     letter-spacing: 0.03em;
@@ -79,6 +80,7 @@
   width: 32%;
 
   ul {
+    list-style: none;
     margin: 0;
     padding: 0;
     padding-right: 20px;
@@ -126,6 +128,7 @@
   }
 
   ul {
+    list-style: none;
     margin: 0;
     padding: 0;
   }
@@ -164,6 +167,10 @@
     width: 65%;
     padding-left: 3px;
 
+    li {
+      padding-bottom: 22px;
+    }
+
     ul {
       padding-right: 5px;
     }
@@ -189,7 +196,7 @@
 
 @media (max-width: $mobile-width) {
   .footer__wrapper {
-    padding: 49px 15px 36px;
+    padding: 49px 15px 32px;
     flex-direction: column;
     align-items: start;
   }

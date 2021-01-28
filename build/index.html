@@ -9,15 +9,10 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="#">
 
-  <!-- <link rel="preload" href="fonts/cormorantgaramond.woff" as="font"> -->
   <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/cormorantgaramondbold.woff" as="font"> -->
   <link rel="preload" href="fonts/cormorantgaramondbold.woff2" as="font" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/cormorantgaramonditalic.woff" as="font"> -->
   <link rel="preload" href="fonts/cormorantgaramonditalic.woff2" as="font" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/poppinsregular.woff" as="font"> -->
   <link rel="preload" href="fonts/poppinsregular.woff2" as="font" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/poppinsbold.woff" as="font"> -->
   <link rel="preload" href="fonts/poppinsbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
@@ -50,7 +45,7 @@
       <div class="header__search">
         <svg width="14" height="14" aria-label="Search">
           <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
-        </svg>        
+        </svg>
         <input id="search" type="text" name="search" placeholder="Type here to search">
         <label for="search" class="visually-hidden">Type here to search</label>
       </div>
@@ -81,16 +76,16 @@
           <h2>New In</h2>
           <a href="catalog.html">Shop Now</a>
         </div>
-        <div class="products__controle-arrow-right swiper-button-next">
+        <button type="button" class="products__controle-arrow-right swiper-button-next">
           <svg width="31" height="9" aria-label="Slide right">
             <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
           </svg>
-        </div>
-        <div class="products__controle-arrow-left swiper-button-prev">
+        </button>
+        <button type="button" class="products__controle-arrow-left swiper-button-prev">
           <svg width="31" height="9" aria-label="Slide left">
             <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
           </svg>
-        </div>
+        </button>
         <div class="products__swiper swiper-container">
           <div class="products__items swiper-wrapper">
             <div class="swiper-slide">
@@ -112,10 +107,10 @@
               <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/index-layered-сhoker.webp 1x, img/index-layered-сhoker2x.webp 2x">
+                  <source type="image/webp" srcset="img/index-layered-choker.webp 1x, img/index-layered-choker2x.webp 2x">
 
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img src="img/index-layered-сhoker.jpg" srcset="img/index-layered-сhoker2x.jpg 2x" width="270" height="284" alt="layered сhoker">
+                  <img src="img/index-layered-choker.jpg" srcset="img/index-layered-choker2x.jpg 2x" width="270" height="284" alt="layered сhoker">
                 </picture>
               </a>
               <div class="products__items-title">
@@ -172,10 +167,10 @@
               <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/index-layered-сhoker.webp 1x, img/index-layered-сhoker2x.webp 2x">
+                  <source type="image/webp" srcset="img/index-layered-choker.webp 1x, img/index-layered-choker2x.webp 2x">
 
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img src="img/index-layered-сhoker.jpg" srcset="img/index-layered-сhoker2x.jpg 2x" width="270" height="284" alt="layered сhoker">
+                  <img src="img/index-layered-choker.jpg" srcset="img/index-layered-choker2x.jpg 2x" width="270" height="284" alt="layered сhoker">
                 </picture>
               </a>
               <div class="products__items-title">
@@ -232,10 +227,10 @@
               <a href="#">
                 <picture>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/index-layered-сhoker.webp 1x, img/index-layered-сhoker2x.webp 2x">
+                  <source type="image/webp" srcset="img/index-layered-choker.webp 1x, img/index-layered-choker2x.webp 2x">
 
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img src="img/index-layered-сhoker.jpg" srcset="img/index-layered-сhoker2x.jpg 2x" width="270" height="284" alt="layered сhoker">
+                  <img src="img/index-layered-choker.jpg" srcset="img/index-layered-choker2x.jpg 2x" width="270" height="284" alt="layered сhoker">
                 </picture>
               </a>
               <div class="products__items-title">
@@ -286,56 +281,53 @@
           <a href="#">Read All</a>
         </div>
         <div class="blog__articles">
-          <picture>
-            <!-- 1х: 339px; 2x: 678px -->
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-care-tablet.webp 1x, img/blog-care-tablet2x.webp 2x">
+          <div class="blog__articles-pic">
+            <picture>
+              <!-- 1х: 339px; 2x: 678px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-care-tablet.webp 1x, img/blog-care-tablet2x.webp 2x">
 
-            <!-- 1х: 285px; 2x: 570px -->
-            <source type="image/webp" srcset="img/blog-care-desktop.webp 1x, img/blog-care-desktop2x.webp 2x">
+              <!-- 1х: 285px; 2x: 570px -->
+              <source type="image/webp" srcset="img/blog-care-desktop.webp 1x, img/blog-care-desktop2x.webp 2x">
 
-            <!-- 1х: 339px; 2x: 678px -->
-            <source media="(max-width: 1023px)" srcset="img/blog-care-tablet.jpg 1x, img/blog-care-tablet2x.jpg 2x">
-
-            <!-- 1х: 285px; 2x: 570px -->
-            <img src="img/blog-care-desktop.jpg" srcset="img/blog-care-desktop2x.jpg 2x" width="285" height="300" alt="pendant face">
-          </picture>
+              <!-- 1х: 285px; 2x: 570px -->
+              <img src="img/blog-care-desktop.jpg" srcset="img/blog-care-desktop2x.jpg 2x" width="285" height="300" alt="pendant face">
+            </picture>
+          </div>
           <div class="blog__description">
             <p>September 30, 2019</p>
             <h2>How to care for your jewellery</h2>
             <a href="#">Read Article</a>
           </div>
-          <picture>
-            <!-- 1х: 339px; 2x: 678px -->
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-trends-tablet.webp 1x, img/blog-trends-tablet2x.webp 2x">
+          <div class="blog__articles-pic">
+            <picture>
+              <!-- 1х: 339px; 2x: 678px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-trends-tablet.webp 1x, img/blog-trends-tablet2x.webp 2x">
 
-            <!-- 1х: 570px; 2x: 1140px -->
-            <source type="image/webp" srcset="img/blog-trends-desktop.webp 1x, img/blog-trends-desktop2x.webp 2x">
+              <!-- 1х: 570px; 2x: 1140px -->
+              <source type="image/webp" srcset="img/blog-trends-desktop.webp 1x, img/blog-trends-desktop2x.webp 2x">
 
-            <!-- 1х: 339px; 2x: 678px -->
-            <source media="(max-width: 1023px)" srcset="img/blog-trends-tablet.jpg 1x, img/blog-trends-tablet2x.jpg 2x">
-
-            <!-- 1х: 570px; 2x: 1140px -->
-            <img src="img/blog-trends-desktop.jpg" srcset="img/blog-trends-desktop2x.jpg 2x" width="570" height="630" alt="set">
-          </picture>
+              <!-- 1х: 570px; 2x: 1140px -->
+              <img src="img/blog-trends-desktop.jpg" srcset="img/blog-trends-desktop2x.jpg 2x" width="570" height="630" alt="set">
+            </picture>
+          </div>
           <div class="blog__description">
             <p>September 23, 2019</p>
             <h2>Power of
               crystals</h2>
             <a href="#">Read Article</a>
           </div>
-          <picture>
-            <!-- 1х: 339px; 2x: 678px -->
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-power-tablet.webp 1x, img/blog-power-tablet2x.webp 2x">
+          <div class="blog__articles-pic">
+            <picture>
+              <!-- 1х: 339px; 2x: 678px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-power-tablet.webp 1x, img/blog-power-tablet2x.webp 2x">
 
-            <!-- 1х: 285px; 2x: 570px -->
-            <source type="image/webp" srcset="img/blog-power-desktop.webp 1x, img/blog-power-desktop2x.webp 2x">
+              <!-- 1х: 285px; 2x: 570px -->
+              <source type="image/webp" srcset="img/blog-power-desktop.webp 1x, img/blog-power-desktop2x.webp 2x">
 
-            <!-- 1х: 339px; 2x: 678px -->
-            <source media="(max-width: 1023px)" srcset="img/blog-power-tablet.jpg 1x, img/blog-power-tablet2x.jpg 2x">
-
-            <!-- 1х: 285px; 2x: 570px -->
-            <img src="img/blog-power-desktop.jpg" srcset="blog-power-desktop2x.jpg 2x" width="285" height="300" alt="earrings">
-          </picture>
+              <!-- 1х: 285px; 2x: 570px -->
+              <img src="img/blog-power-desktop.jpg" srcset="blog-power-desktop2x.jpg 2x" width="285" height="300" alt="earrings">
+            </picture>
+          </div>
           <div class="blog__description">
             <p>September 30, 2019</p>
             <h2>AW 19 trends</h2>
@@ -349,7 +341,7 @@
         <table>
           <caption>Frequently asked questions</caption>
           <tr>
-            <td class="faq__list-item faq__list-item__materials faq__list-item--hide">
+            <td class="faq__list-item faq__list-item--materials faq__list-item--hide">
               <h3>What materials are the&nbsp;jewellery made of?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
@@ -357,7 +349,7 @@
             </td>
           </tr>
           <tr>
-            <td class="faq__list-item faq__list-item__countries faq__list-item--hide">
+            <td class="faq__list-item faq__list-item--countries faq__list-item--hide">
               <h3>Which countries do&nbsp;you&nbsp;deliver to?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
@@ -365,7 +357,7 @@
             </td>
           </tr>
           <tr>
-            <td class="faq__list-item faq__list-item__payment faq__list-item--hide">
+            <td class="faq__list-item faq__list-item--payment faq__list-item--hide">
               <h3>What are the payment&nbsp;methods?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
@@ -373,7 +365,7 @@
             </td>
           </tr>
           <tr>
-            <td class="faq__list-item faq__list-item__return faq__list-item--hide">
+            <td class="faq__list-item faq__list-item--return faq__list-item--hide">
               <h3>Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t&nbsp;fit&nbsp;me?</h3>
               <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
                 semiprecious stones and crystals.</p>
@@ -409,9 +401,6 @@
 
                 <!-- 1х: 400px; 2x: 800px -->
                 <source type="image/webp" srcset="img/chjewellery-big-earrings.webp 1x, img/chjewellery-big-earrings2x.webp 2x">
-
-                <!-- 1х: 145px; 2x: 290px -->
-                <source media="(max-width: 767px)" srcset="img/chjewellery-big-earrings-mobile.jpg 1x, img/chjewellery-big-earrings-mobile2x.jpg 2x">
 
                 <!-- 1х: 400px; 2x: 800px -->
                 <img src="img/chjewellery-big-earrings.jpg" srcset="img/chjewellery-big-earrings2x.jpg 2x" width="400" height="414" alt="long earrings">
@@ -482,7 +471,7 @@
       <div class="footer__main">
         <h2>The good stuff in&nbsp;your inbox </h2>
         <p>News and updates from CH. No&nbsp;spam, we promise.</p>
-        <div class="footer__email-form">          
+        <div class="footer__email-form">
           <input id="email" type="text" name="email" placeholder="Your E-mail">
           <label for="email" class="visually-hidden">Input email</label>
           <button type="submit">
@@ -583,7 +572,9 @@
 
   </div>
 
-  <script src="js/script.js"></script>
+
+  <script src="js/lib/vendor.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
