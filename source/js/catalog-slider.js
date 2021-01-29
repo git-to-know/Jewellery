@@ -1,7 +1,7 @@
 'use strict';
 (function () {
 
-  new Swiper('.items__list', {
+  new window.Swiper('.items__list', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

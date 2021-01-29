@@ -19,17 +19,17 @@
       close.addEventListener('click', closePopupClickHandler);
       overlay.addEventListener('click', closePopupClickHandler);
       window.addEventListener('keydown', escClickHandler);
-    }
+    };
     button.addEventListener('click', openPopupClickHandler);
 
-    var closePopupClickHandler = function (evt) {
+    var closePopupClickHandler = function () {
       if (popup.classList.contains('card-popup--show')) {
         popup.classList.remove('card-popup--show');
         body.classList.remove('no-scroll');
       }
       close.removeEventListener('click', closePopupClickHandler);
       button.addEventListener('click', openPopupClickHandler);
-    }
+    };
     close.addEventListener('click', closePopupClickHandler);
 
     overlay.addEventListener('click', closePopupClickHandler);

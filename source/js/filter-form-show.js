@@ -1,3 +1,4 @@
+'use strict';
 (function () {
 
   var filter = document.querySelector('.items__filter');
@@ -7,7 +8,7 @@
   if (filter) {
 
     filter.classList.remove('items__filter--show');
-      
+
     var openFilterClickHandler = function (evt) {
       if (!filter.classList.contains('items__filter--show')) {
         evt.preventDefault();
@@ -16,16 +17,16 @@
       filterButton.removeEventListener('click', openFilterClickHandler);
       close.addEventListener('click', closeFilterClickHandler);
       window.addEventListener('keydown', escClickHandler);
-    }
+    };
     filterButton.addEventListener('click', openFilterClickHandler);
 
-    var closeFilterClickHandler = function (evt) {
+    var closeFilterClickHandler = function () {
       if (filter.classList.contains('items__filter--show')) {
         filter.classList.remove('items__filter--show');
       }
       close.removeEventListener('click', closeFilterClickHandler);
       filterButton.addEventListener('click', openFilterClickHandler);
-    }
+    };
     close.addEventListener('click', closeFilterClickHandler);
 
     var escClickHandler = function (evt) {
@@ -37,5 +38,4 @@
     };
     window.addEventListener('keydown', escClickHandler);
   }
-  })();
-  
+})();

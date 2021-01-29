@@ -1,11 +1,11 @@
 'use strict';
 (function () {
 
-  let swiper = undefined;
-  const mobile = window.matchMedia('(max-width: 767px)').matches;
+  var swiper;
+  var mobile = window.matchMedia('(max-width: 767px)').matches;
 
   if (mobile) {
-    swiper = new Swiper('.card__container', {
+    swiper = new window.Swiper('.card__container', {
       pagination: {
         el: '.swiper-pagination',
         clicable: true,
@@ -16,12 +16,12 @@
       },
       spaceBetween: 30,
     });
-  };
+  }
 
-  window.addEventListener('resize', () => {
+  window.addEventListener('resize', function () {
     if (mobile) {
       if (!swiper) {
-        swiper = new Swiper('.card__container', {
+        swiper = new window.Swiper('.card__container', {
           pagination: {
             el: '.swiper-pagination',
             clicable: true,
@@ -29,16 +29,16 @@
             renderFraction: function (currentClass, totalClass) {
               return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
             },
-          },    
+          },
           spaceBetween: 30,
         });
       }
     } else {
       if (swiper) {
         swiper.destroy();
-        swiper = undefined;
+        swiper = NaN;
       }
     }
-    document.location.reload (1);
+    document.location.reload(1);
   });
 })();

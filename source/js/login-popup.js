@@ -5,7 +5,7 @@
   var close = document.querySelector('.login-popup__close');
   var overlay = document.querySelector('.login-popup__overlay');
   var body = document.querySelector('body');
-  var header= document.querySelector('.header');
+  var header = document.querySelector('.header');
 
   if (loginPopup) {
 
@@ -20,7 +20,7 @@
         loginPopup.classList.add('login-popup--show');
         email.focus();
         body.classList.add('no-scroll');
-        if (header.classList.contains('header--menu-show')){
+        if (header.classList.contains('header--menu-show')) {
           header.classList.remove('header--menu-show');
         }
       }
@@ -28,19 +28,19 @@
       close.addEventListener('click', closePopupClickHandler);
       overlay.addEventListener('click', closePopupClickHandler);
       window.addEventListener('keydown', escClickHandler);
-    }
+    };
     link.addEventListener('click', openPopupClickHandler);
 
-    var closePopupClickHandler = function (evt) {
+    var closePopupClickHandler = function () {
       if (loginPopup.classList.contains('login-popup--show')) {
         loginPopup.classList.remove('login-popup--show');
         body.classList.remove('no-scroll');
       }
       close.removeEventListener('click', closePopupClickHandler);
       link.addEventListener('click', openPopupClickHandler);
-    }
+    };
     close.addEventListener('click', closePopupClickHandler);
-    
+
     overlay.addEventListener('click', closePopupClickHandler);
     overlay.removeEventListener('click', closePopupClickHandler);
 

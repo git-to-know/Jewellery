@@ -19,17 +19,17 @@
       close.addEventListener('click', closePopupClickHandler);
       overlay.addEventListener('click', closePopupClickHandler);
       window.addEventListener('keydown', escClickHandler);
-    }
+    };
     button.addEventListener('click', openPopupClickHandler);
 
-    var closePopupClickHandler = function (evt) {
+    var closePopupClickHandler = function () {
       if (popup.classList.contains('card-popup--show')) {
         popup.classList.remove('card-popup--show');
         body.classList.remove('no-scroll');
       }
       close.removeEventListener('click', closePopupClickHandler);
       button.addEventListener('click', openPopupClickHandler);
-    }
+    };
     close.addEventListener('click', closePopupClickHandler);
 
     overlay.addEventListener('click', closePopupClickHandler);
@@ -50,11 +50,11 @@
 'use strict';
 (function () {
 
-  let swiper = undefined;
-  const mobile = window.matchMedia('(max-width: 767px)').matches;
+  var swiper;
+  var mobile = window.matchMedia('(max-width: 767px)').matches;
 
   if (mobile) {
-    swiper = new Swiper('.card__container', {
+    swiper = new window.Swiper('.card__container', {
       pagination: {
         el: '.swiper-pagination',
         clicable: true,
@@ -65,12 +65,12 @@
       },
       spaceBetween: 30,
     });
-  };
+  }
 
-  window.addEventListener('resize', () => {
+  window.addEventListener('resize', function () {
     if (mobile) {
       if (!swiper) {
-        swiper = new Swiper('.card__container', {
+        swiper = new window.Swiper('.card__container', {
           pagination: {
             el: '.swiper-pagination',
             clicable: true,
@@ -78,24 +78,24 @@
             renderFraction: function (currentClass, totalClass) {
               return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
             },
-          },    
+          },
           spaceBetween: 30,
         });
       }
     } else {
       if (swiper) {
         swiper.destroy();
-        swiper = undefined;
+        swiper = NaN;
       }
     }
-    document.location.reload (1);
+    document.location.reload(1);
   });
 })();
 
 'use strict';
 (function () {
 
-  new Swiper('.items__list', {
+  new window.Swiper('.items__list', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -144,6 +144,7 @@
   });
 
 })();
+
 'use strict';
 (function () {
 
@@ -156,7 +157,6 @@
   var faqReturnToggle = document.querySelector('.faq__toggle--return');
   var itemPayment = document.querySelector('.faq__list-item--payment');
   var faqPaymentToggle = document.querySelector('.faq__toggle--payment');
-  
 
   if (faq) {
     faq.classList.remove('faq--nojs');
@@ -187,6 +187,7 @@
   }
 })();
 
+'use strict';
 (function () {
 
   var filter = document.querySelector('.items__filter');
@@ -196,7 +197,7 @@
   if (filter) {
 
     filter.classList.remove('items__filter--show');
-      
+
     var openFilterClickHandler = function (evt) {
       if (!filter.classList.contains('items__filter--show')) {
         evt.preventDefault();
@@ -205,16 +206,16 @@
       filterButton.removeEventListener('click', openFilterClickHandler);
       close.addEventListener('click', closeFilterClickHandler);
       window.addEventListener('keydown', escClickHandler);
-    }
+    };
     filterButton.addEventListener('click', openFilterClickHandler);
 
-    var closeFilterClickHandler = function (evt) {
+    var closeFilterClickHandler = function () {
       if (filter.classList.contains('items__filter--show')) {
         filter.classList.remove('items__filter--show');
       }
       close.removeEventListener('click', closeFilterClickHandler);
       filterButton.addEventListener('click', openFilterClickHandler);
-    }
+    };
     close.addEventListener('click', closeFilterClickHandler);
 
     var escClickHandler = function (evt) {
@@ -226,22 +227,22 @@
     };
     window.addEventListener('keydown', escClickHandler);
   }
-  })();
-  
+})();
+
 'use strict';
 (function () {
   var filter = document.querySelector('.items__filter');
   var productToggle = document.querySelector('.items__filter-toggle--product');
-  var productRange = document.querySelector('.items__option-product')
+  var productRange = document.querySelector('.items__option-product');
 
   var materialToggle = document.querySelector('.items__filter-toggle--material');
-  var materialRange = document.querySelector('.items__option-material')
+  var materialRange = document.querySelector('.items__option-material');
 
   var collectionToggle = document.querySelector('.items__filter-toggle--collection');
-  var collectionRange = document.querySelector('.items__option-collection')
+  var collectionRange = document.querySelector('.items__option-collection');
 
   var priceToggle = document.querySelector('.items__filter-toggle--price');
-  var priceRange = document.querySelector('.items__option-price')
+  var priceRange = document.querySelector('.items__option-price');
 
 
   if (filter) {
@@ -255,23 +256,24 @@
     };
 
     productToggle.addEventListener('click', function () {
-     toggleClickHandler(productRange);
+      toggleClickHandler(productRange);
     });
 
     materialToggle.addEventListener('click', function () {
       toggleClickHandler(materialRange);
-     });
+    });
 
     collectionToggle.addEventListener('click', function () {
-    toggleClickHandler(collectionRange);
+      toggleClickHandler(collectionRange);
     });
 
     priceToggle.addEventListener('click', function () {
-    toggleClickHandler(priceRange);
+      toggleClickHandler(priceRange);
     });
   }
 
 })();
+
 'use strict';
 (function () {
   var link = document.querySelector('.login-button');
@@ -279,7 +281,7 @@
   var close = document.querySelector('.login-popup__close');
   var overlay = document.querySelector('.login-popup__overlay');
   var body = document.querySelector('body');
-  var header= document.querySelector('.header');
+  var header = document.querySelector('.header');
 
   if (loginPopup) {
 
@@ -294,7 +296,7 @@
         loginPopup.classList.add('login-popup--show');
         email.focus();
         body.classList.add('no-scroll');
-        if (header.classList.contains('header--menu-show')){
+        if (header.classList.contains('header--menu-show')) {
           header.classList.remove('header--menu-show');
         }
       }
@@ -302,19 +304,19 @@
       close.addEventListener('click', closePopupClickHandler);
       overlay.addEventListener('click', closePopupClickHandler);
       window.addEventListener('keydown', escClickHandler);
-    }
+    };
     link.addEventListener('click', openPopupClickHandler);
 
-    var closePopupClickHandler = function (evt) {
+    var closePopupClickHandler = function () {
       if (loginPopup.classList.contains('login-popup--show')) {
         loginPopup.classList.remove('login-popup--show');
         body.classList.remove('no-scroll');
       }
       close.removeEventListener('click', closePopupClickHandler);
       link.addEventListener('click', openPopupClickHandler);
-    }
+    };
     close.addEventListener('click', closePopupClickHandler);
-    
+
     overlay.addEventListener('click', closePopupClickHandler);
     overlay.removeEventListener('click', closePopupClickHandler);
 
@@ -355,12 +357,12 @@
 'use strict';
 (function () {
 
-  new Swiper('.products__swiper', {
+  new window.Swiper('.products__swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
+
     pagination: {
       el: '.swiper-pagination',
       clicable: true,
@@ -368,25 +370,24 @@
         return '<span class="' + className + '">' + (index + 1) + '</span>';
       },
     },
-  
-    spaceBetween: 30,  
+
+    spaceBetween: 30,
     slidesPerView: 2,
 
-    breakpoints: {      
+    breakpoints: {
       320: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-      },  
+      },
       1024: {
         slidesPerView: 3,
         slidesPerGroup: 3
-      },  
+      },
       1270: {
         slidesPerView: 4,
         slidesPerGroup: 4
       }
     },
   });
-  
-}) ();
 
+})();
