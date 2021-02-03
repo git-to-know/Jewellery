@@ -68,8 +68,10 @@
 }
 
 .card-popup__button-close {
-  top: 22px;
-  right: 20px;
+  top: 18px;
+  right: 12px;
+  height: 30px;
+  width: 30px;
 
   &:hover {
     color: $brown;
@@ -158,8 +160,8 @@
   }
 
   .card-popup__button-close {
-    top: 15px;
-    right: 16px;
+    top: 9px;
+    right: 7px;
   }
 
   .card-popup__description {

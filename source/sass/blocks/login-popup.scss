@@ -67,6 +67,10 @@
   button {
     border: none;
     cursor: pointer;
+
+    &:focus {
+      outline: 1px solid $font-color;
+    }
   }
 }
 
@@ -114,15 +118,16 @@
 }
 
 .login-popup__close {
-  width: auto;
   background-color: transparent;
   padding: 0;
   margin-top: 0;
   color: black;
   position: absolute;
   z-index: 100;
-  right: 19px;
-  top: 19px;
+  right: 11px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
 
   &:hover {
     color: $white;
@@ -186,7 +191,7 @@
   }
 
   .login-popup__close {
-    right: 15px;
-    top: 15px;
+    right: 7px;
+    top: 9px;
   }
 }

@@ -13,6 +13,7 @@
       if (!popup.classList.contains('card-popup--show')) {
         evt.preventDefault();
         popup.classList.add('card-popup--show');
+        close.focus();
         body.classList.add('no-scroll');
       }
       button.removeEventListener('click', openPopupClickHandler);

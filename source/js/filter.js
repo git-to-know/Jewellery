@@ -13,8 +13,11 @@
   var priceToggle = document.querySelector('.items__filter-toggle--price');
   var priceRange = document.querySelector('.items__option-price');
 
+  var itemsList = document.querySelector('.items__list');
 
   if (filter) {
+
+    itemsList.classList.remove('items__list--nojs');
 
     var toggleClickHandler = function (item) {
       if (item.classList.contains('items__option--hide')) {

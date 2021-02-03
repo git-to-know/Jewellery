@@ -60,10 +60,11 @@
 
 .header__login {
   order: 3;
-  width: 4%;
+  width: 15%;
   margin-left: auto;
   padding-top: 13px;
-  padding-right: 29px;
+  padding-right: 37px;
+  text-align: end;
 
   a {
     cursor: pointer;
@@ -71,6 +72,10 @@
 
     &:hover {
       color: $brown;
+    }
+
+    &:focus {
+      outline: 1px solid $brown;
     }
   }
 }
@@ -80,6 +85,18 @@
   width: 6%;
   padding-top: 13px;
   margin-right: -26px;
+
+  a {
+    color: $font-color;
+
+    &:focus {
+      outline: 1px solid $brown;
+    }
+
+    &:hover {
+      color: $brown;
+    }
+  }
 
   p {
     margin: 0;
@@ -119,6 +136,7 @@
 
   li {
     padding-right: 37px;
+    padding-bottom: 17px;
 
     &:last-child {
       padding-right: 0;
@@ -303,7 +321,7 @@
       }
     }
 
-    .header__cart {
+    .header__cart a {
       color: $white;
     }
 
@@ -313,6 +331,7 @@
       margin: 0;
       padding: 23px 0 0 2px;
       width: 100%;
+      text-align: start;
 
       a {
         font-size: 18px;
@@ -322,9 +341,15 @@
     }
   }
 
-  .header--nojs .header__wrapper {
-    height: auto;
-    position: static;
+  .header--nojs {
+    .header__wrapper {
+      height: auto;
+      position: static;
+    }
+
+    .header__main-nav-burger {
+      display: none;
+    }
   }
 }
 

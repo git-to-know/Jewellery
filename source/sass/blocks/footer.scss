@@ -8,7 +8,7 @@
   max-width: 1366px;
   display: flex;
   padding: 87px 96px 80px 96px;
-  align-items: center;
+  align-items: start;
   width: 100%;
   justify-content: space-between;
 }
@@ -78,6 +78,7 @@
   display: flex;
   justify-content: space-between;
   width: 32%;
+  padding-top: 10px;
 
   ul {
     list-style: none;
@@ -107,7 +108,7 @@
 
 .footer__social {
   width: 115px;
-  margin-top: -5px;
+  padding-top: 7px;
 
   a {
     color: $white;
@@ -166,6 +167,7 @@
   .footer__nav {
     width: 65%;
     padding-left: 3px;
+    padding-top: 0;
 
     li {
       padding-bottom: 22px;
@@ -187,6 +189,7 @@
 
   .footer__social {
     margin-top: 0;
+    padding-top: 3px;
 
     li {
       margin-bottom: 24px;

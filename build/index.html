@@ -30,23 +30,25 @@
         </ul>
       </div>
       <div class="header__logo">
-        <a href="#">
+        <a>
           <svg width="66" height="66" aria-label="Logo">
             <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
           </svg>
         </a>
       </div>
       <div class="header__cart">
-        <p>Cart 0</p>
-        <svg width="18" height="16" aria-label="Cart">
-          <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
-        </svg>
+        <a href="#">
+          <p>Cart 0</p>
+          <svg width="18" height="16" aria-label="Cart">
+            <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+          </svg>
+        </a>
       </div>
       <div class="header__search">
         <svg width="14" height="14" aria-label="Search">
           <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
         </svg>
-        <input id="search" type="text" name="search" placeholder="Type here to search">
+        <input id="search" type="search" name="search" placeholder="Type here to search">
         <label for="search" class="visually-hidden">Type here to search</label>
       </div>
       <div class="header__nav">
@@ -471,8 +473,8 @@
       <div class="footer__main">
         <h2>The good stuff in&nbsp;your inbox </h2>
         <p>News and updates from CH. No&nbsp;spam, we promise.</p>
-        <div class="footer__email-form">
-          <input id="email" type="text" name="email" placeholder="Your E-mail">
+        <form class="footer__email-form">
+          <input id="email" type="email" name="email" placeholder="Your E-mail" required="">
           <label for="email" class="visually-hidden">Input email</label>
           <button type="submit">
             Sign Up
@@ -480,7 +482,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
       <div class="footer__nav">
         <ul>

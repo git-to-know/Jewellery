@@ -24,6 +24,10 @@
     margin: 0;
   }
 
+  tr:hover {
+    background-color: $light-brown;
+  }
+
   td {
     border: 1px solid $brown;
     padding: 43px 100px 44px 46px;
@@ -57,11 +61,6 @@
     cursor: pointer;
     border: 0;
     background-color: transparent;
-
-    &:hover {
-      background-color: $light-brown;
-      z-index: -1;
-    }
 
     &::before {
       position: absolute;

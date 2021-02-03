@@ -1,6 +1,6 @@
 .card {
   max-width: 1366px;
-  padding: 98px 98px 118px;
+  padding: 81px 98px 118px;
   display: flex;
   margin: auto;
 }
@@ -87,6 +87,10 @@
       outline: 1px solid $brown;
       outline-offset: -1px;
       color: $font-color;
+    }
+
+    &:focus {
+      outline: 1px solid $font-color;
     }
   }
 }

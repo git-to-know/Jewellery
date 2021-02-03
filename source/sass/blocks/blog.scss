@@ -5,7 +5,10 @@
 
 .blog__wrapper {
   max-width: 1366px;
-  padding: 114px 74px 119px;
+  padding: 114px 0 119px;
+  overflow: hidden;
+  margin-right: 74px;
+  margin-left: 74px;
 }
 
 .blog__title {
@@ -81,8 +84,9 @@
 
 .blog__articles-pic {
   img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -126,6 +130,7 @@
 @media (max-width: $tablet-width) {
   .blog__wrapper {
     padding: 68px 45px 69px;
+    margin: 0;
   }
 
   .blog__articles {
