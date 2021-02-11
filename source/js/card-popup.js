@@ -7,7 +7,7 @@
   var body = document.querySelector('body');
 
   if (popup) {
-    button.removeAttribute('href');
+    button.href = '#';
 
     var openPopupClickHandler = function (evt) {
       if (!popup.classList.contains('card-popup--show')) {

@@ -20,7 +20,7 @@
   <header class="header header--menu-show header--nojs">
     <div class="header__wrapper header__wrapper--catalog">
       <div class="header__main-nav">
-        <div class="header__main-nav-burger"></div>
+        <div class="header__main-nav-burger" tabindex="1"></div>
         <ul>
           <li><a href="#">What's new</a></li>
           <li><a href="#">Chokers</a></li>
@@ -30,14 +30,14 @@
         </ul>
       </div>
       <div class="header__logo">
-        <a href="index.html">
+        <a href="index.html" tabindex="2">
           <svg width="66" height="66" aria-label="Logo">
             <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
           </svg>
         </a>
       </div>
       <div class="header__cart">
-        <a href="#">
+        <a href="#" tabindex="4">
           <p>Cart 0</p>
           <svg width="18" height="16" aria-label="Cart">
             <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
@@ -48,7 +48,7 @@
         <svg width="14" height="14" aria-label="Search">
           <use xlink:href="img/sprite_auto.svg#icon-loupe"></use>
         </svg>
-        <input id="search" type="text" name="search" placeholder="Type here to search">
+        <input id="search" type="text" name="search" placeholder="Type here to search" tabindex="5">
         <label for="search" class="visually-hidden">Type here to search</label>
       </div>
       <div class="header__nav">
@@ -59,7 +59,7 @@
         </ul>
       </div>
       <div class="header__login">
-        <a href="index-nojs.html" class="login-button">Login</a>
+        <a href="index-nojs.html" class="login-button" tabindex="3">Login</a>
       </div>
     </div>
   </header>
@@ -471,11 +471,6 @@
   <div class="login-popup">
     <div class="login-popup__overlay"></div>
     <div class="login-popup__box">
-      <button type="button" class="login-popup__close">
-        <svg width="14" height="14" aria-label="Close">
-          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-        </svg>
-      </button>
       <div class="login-popup__main-pic">
         <picture>
           <!-- 1х: 430px; 2x: 860px -->
@@ -501,6 +496,11 @@
         <p>Don’t have an account?</p>
         <a href="#">Sign up</a>
       </div>
+      <button type="button" class="login-popup__close">
+        <svg width="14" height="14" aria-label="Close">
+          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
 
   </div>

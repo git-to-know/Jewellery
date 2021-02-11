@@ -36,7 +36,7 @@
     } else {
       if (swiper) {
         swiper.destroy();
-        swiper = NaN;
+        swiper = undefined;
       }
     }
     document.location.reload(1);

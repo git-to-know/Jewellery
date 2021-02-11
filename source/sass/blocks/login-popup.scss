@@ -50,7 +50,7 @@
   }
 
   a {
-    width: 100%;
+    width: 41%;
     text-align: end;
     display: block;
     font-size: 12px;
@@ -58,6 +58,7 @@
     font-weight: 500;
     color: $grey;
     margin-top: -19px;
+    margin-left: auto;
 
     &:hover {
       color: $brown;
@@ -67,11 +68,17 @@
   button {
     border: none;
     cursor: pointer;
+  }
 
+  svg {
     &:focus {
-      outline: 1px solid $font-color;
+      border: 1px solid $font-color;
     }
   }
+}
+
+.login-popup__box--nojs {
+  position: relative;
 }
 
 .login-popup__form {
@@ -94,6 +101,7 @@
 .login-popup__main-pic {
   height: 138px;
   position: relative;
+  pointer-events: none;
 }
 
 .login-popup__sign-up {

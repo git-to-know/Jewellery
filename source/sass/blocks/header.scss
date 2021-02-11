@@ -63,20 +63,21 @@
   width: 15%;
   margin-left: auto;
   padding-top: 13px;
-  padding-right: 37px;
+  padding-right: 20px;
   text-align: end;
 
   a {
     cursor: pointer;
     color: $font-color;
+    padding-right: 17px;
 
     &:hover {
       color: $brown;
     }
 
-    &:focus {
-      outline: 1px solid $brown;
-    }
+    // &:focus {
+    //   outline: 1px solid $brown;
+    // }
   }
 }
 
@@ -89,9 +90,9 @@
   a {
     color: $font-color;
 
-    &:focus {
-      outline: 1px solid $brown;
-    }
+    // &:focus {
+    //   outline: 1px solid $brown;
+    // }
 
     &:hover {
       color: $brown;
@@ -216,12 +217,18 @@
 
   .header--menu-show {
     .header__wrapper {
-      position: absolute;
+      // position: absolute;
       z-index: 50;
       width: 100%;
       box-sizing: border-box;
       background-color: $brown;
       padding-bottom: 74px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      flex-wrap: nowrap;
+      overflow-y: auto;
+      height: 100vh;
     }
 
     .header__main-nav {

@@ -7,7 +7,7 @@
   var body = document.querySelector('body');
 
   if (popup) {
-    button.removeAttribute('href');
+    button.href = '#';
 
     var openPopupClickHandler = function (evt) {
       if (!popup.classList.contains('card-popup--show')) {
@@ -51,7 +51,7 @@
 'use strict';
 (function () {
 
-  var swiper;
+  var swiper = undefined;
   var mobile = window.matchMedia('(max-width: 767px)').matches;
 
   if (mobile) {
@@ -86,7 +86,7 @@
     } else {
       if (swiper) {
         swiper.destroy();
-        swiper = NaN;
+        swiper = undefined;
       }
     }
     document.location.reload(1);
@@ -340,6 +340,7 @@
 
   var menuButton = document.querySelector('.header__main-nav-burger');
   var header = document.querySelector('.header');
+  var body = document.querySelector('body');
 
   if (header) {
 
@@ -349,8 +350,10 @@
     menuButton.addEventListener('click', function () {
       if (header.classList.contains('header--menu-show')) {
         header.classList.remove('header--menu-show');
+        body.classList.remove('no-scroll');
       } else {
         header.classList.add('header--menu-show');
+        body.classList.add('no-scroll');
       }
     });
 
