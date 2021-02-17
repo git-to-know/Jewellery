@@ -142,6 +142,10 @@
   }
 }
 
+.card__container .swiper-pagination {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .card {
     padding: 31px 44px 74px 46px;
@@ -250,6 +254,14 @@
   .card__container {
     width: 100%;
     padding-right: 0;
+
+    .swiper-pagination {
+      display: block;
+      position: absolute;
+      bottom: 54px;
+      z-index: 5;
+      right: 43%;
+    }
   }
 
   .card__picture {
@@ -293,13 +305,6 @@
       width: 24%;
       text-align: center;
     }
-  }
-
-  .card__container .swiper-pagination {
-    position: absolute;
-    bottom: 54px;
-    z-index: 5;
-    right: 43%;
   }
 
   .card__description-table-name p:first-child {
