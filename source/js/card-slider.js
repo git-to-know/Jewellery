@@ -19,6 +19,7 @@
   }
 
   window.addEventListener('resize', function () {
+    mobile = window.matchMedia('(max-width: 767px)').matches;
     if (mobile) {
       if (!swiper) {
         swiper = new window.Swiper('.card__container', {
@@ -39,6 +40,5 @@
         swiper = undefined;
       }
     }
-    document.location.reload(1);
   });
 })();
